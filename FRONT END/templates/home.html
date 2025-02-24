@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+
+{% block navbar %}
+    <a style="margin-left: 400px ; color: yellow;" href="{{url_for('home')}}" class="nav-item nav-link"><b>Home</b></a>
+    <a style="color: white;" href="{{url_for('upload')}}" class="nav-item nav-link"><b>Upload</b></a>
+    <a style="color: white;" href="{{url_for('index')}}" class="nav-item nav-link"><b>LogOut</b></a>
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid p-0 pb-5 mb-5">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="min-height: 300px;">
+                    <img class="position-relative w-100" src="/static/img/pexels-peterorpete-66218.jpg">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="p-5" style="width: 100%; max-width: 900px; margin-top: -100px;">
+                            <h5 class="text-white text-uppercase mb-md-3">WELCOME TO</h5>
+                            <h1 class="display-3 text-white mb-md-4">Under water fish detection using Faster RCNN and YOLOv5</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

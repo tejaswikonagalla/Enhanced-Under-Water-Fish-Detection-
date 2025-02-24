@@ -1,0 +1,33 @@
+{% extends 'index.html' %}
+
+{% block navbar %}
+    <a style="margin-left: 400px ; color: white;" href="{{url_for('home')}}" class="nav-item nav-link"><b>Home</b></a>
+    <a style="color: yellow;" href="{{url_for('upload')}}" class="nav-item nav-link"><b>Upload</b></a>
+    <a style="color: white;" href="{{url_for('index')}}" class="nav-item nav-link"><b>LogOut</b></a>
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px; width: 1300px;">
+        <center>
+            <div class="col-lg-5 col-md-12 mb-5">
+                <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Upload File</h5>
+                <div class="w-100">
+                    <form action="{{url_for('upload')}}" method="post" enctype="multipart/form-data">
+                        <div class="input-group">
+                            <input type="file" class="btn btn-outline-light" name="file" accept="images/*" style="padding: 10px;">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary px-4">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div><br>
+
+            {% if prediction_image %}
+                <h2>Prediction Result</h2>
+                <img src="{{ url_for('static', filename='prediction.png') }}" alt="Prediction" style="height: 500px; width: 500px;">
+            {% endif %}
+        </center>
+    </div>
+    
+{% endblock %}

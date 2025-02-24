@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Under water fish detection using Faster RCNN and YOLOv5</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="/static/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0//static/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div style="background-color: rgba(0, 0, 0, 0.537);" class="container-fluid">
+        <div style="background-color: rgba(0, 0, 0, 0.537); height: 70px;" class="row border-top px-xl-5">
+            <div style="background-color: rgba(0, 0, 0, 0.537);" class="col-lg-5 d-none d-lg-block">
+                <h4 style="margin-top: 15px; color: white;">
+                    <img src="/static/img/icons8-fish-60.png" height="30px" width="30px"> <b>Under water fish detection</b>
+                </h4>
+            </div>
+            <nav style="background-color: rgba(0, 0, 0, 0.537);" class="navbar navbar-expand-lg navbar-light col-lg-7">
+                {% block navbar %}
+                    <a style="margin-left: 300px ; color: yellow;" href="{{url_for('index')}}" class="nav-item nav-link"><b>Home</b></a>
+                    <a style="color: white;" href="{{url_for('about')}}" class="nav-item nav-link"><b>About</b></a>
+                    <a style="color: white;" href="{{url_for('register')}}" class="nav-item nav-link"><b>Registration</b></a>
+                    <a style="color: white;" href="{{url_for('login')}}" class="nav-item nav-link"><b>LogIn</b></a>
+                {% endblock %}
+            </nav>
+        </div>
+    </div>
+
+    {% block content %}
+        <div class="container-fluid p-0 pb-5 mb-5">
+            <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="min-height: 300px;">
+                        <img class="position-relative w-100" src="/static/img/pexels-lone-jensen-431642-2156316.jpg">
+                        <div class="carousel-caption d-flex align-items-center justify-content-center">
+                            <div class="p-5" style="width: 100%; max-width: 1000px; margin-top: -250px;">
+                                <h5 class="text-white text-uppercase mb-md-3">WELCOME TO</h5>
+                                <h1 class="display-3 text-white mb-md-4">Under water fish detection using Faster RCNN and YOLOv5</h1>
+                                <a style="width: 150px;" href="{{url_for('register')}}" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Register</a>
+                                <a style="width: 150px; margin-left: 5px;" href="{{url_for('login')}}" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">LogIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
+    {% if message %}
+		<script>
+			alert("{{ message }}")        
+		</script>
+	{% endif %}
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1//static/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/lib/easing/easing.min.js"></script>
+    <script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="/static/mail/jqBootstrapValidation.min.js"></script>
+    <script src="/static/mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="/static/js/main.js"></script>
+</body>
+
+</html>

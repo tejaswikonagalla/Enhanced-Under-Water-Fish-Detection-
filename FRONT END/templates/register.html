@@ -1,0 +1,43 @@
+{% extends 'index.html' %}
+
+{% block navbar %}
+    <a style="margin-left: 300px; color: white;" href="{{url_for('index')}}" class="nav-item nav-link"><b>Home</b></a>
+    <a style="color: white;" href="{{url_for('about')}}" class="nav-item nav-link"><b>About</b></a>
+    <a style="color: yellow;" href="{{url_for('register')}}" class="nav-item nav-link"><b>Registration</b></a>
+    <a style="color: white;" href="{{url_for('login')}}" class="nav-item nav-link"><b>LogIn</b></a>
+{% endblock %}
+
+{% block content %}
+    <center>
+        <div class="col-6">
+            <div class="card border-0">
+                <div class="card-header bg-light text-center p-4">
+                    <h1 class="m-0">Registration</h1>
+                </div>
+                <div class="card-body rounded-bottom bg-primary p-5">
+                    <form action="{{url_for('register')}}" method="post">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control border-0 p-4" placeholder="Your name" required="required" />
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control border-0 p-4" placeholder="Your email" required="required" />
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" name="password" class="form-control border-0 p-4" placeholder="Your Password" required="required" />
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" name="c_password" class="form-control border-0 p-4" placeholder="Conform Your Password" required="required" />
+                        </div>
+
+                        <div>
+                            <button class="btn btn-dark btn-block border-0 py-3" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </center>
+{% endblock %}

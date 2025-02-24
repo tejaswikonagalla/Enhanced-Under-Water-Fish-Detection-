@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+
+{% block navbar %}
+    <a style="margin-left: 300px; color: white;" href="{{url_for('index')}}" class="nav-item nav-link"><b>Home</b></a>
+    <a style="color: yellow;" href="{{url_for('about')}}" class="nav-item nav-link"><b>About</b></a>
+    <a style="color: white;" href="{{url_for('register')}}" class="nav-item nav-link"><b>Registration</b></a>
+    <a style="color: white;" href="{{url_for('login')}}" class="nav-item nav-link"><b>LogIn</b></a>
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="/static/img/pexels-thiago-2422181.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <div class="text-left mb-4">
+                        <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">About Us</h5>
+                    </div>
+                    <p style="text-align: justify;">
+                        Underwater fish detection plays a crucial role in marine biology, environmental monitoring, and fisheries management. The complexity of underwater environments, characterized by variable lighting conditions, water turbidity, and occlusions, poses significant challenges for accurate fish detection. This project explores the application of advanced deep learning techniques, specifically Faster Region-based Convolutional Neural Networks (Faster R-CNN) and You Only Look Once version 5 (YOLOv5), to address these challenges. Faster R-CNN is known for its high accuracy in object detection tasks, while YOLOv5 offers real-time detection capabilities with a balance between speed and precision. The primary objective of this research is to develop and evaluate an effective underwater fish detection system using these two state-of-the-art models. The dataset used includes diverse images of underwater scenes with different species of fish, annotated for training and validation purposes. Both models are trained and fine-tuned to handle the specific nuances of underwater imagery. The performance of Faster R-CNN and YOLOv5 is compared in terms of precision, recall, F1-score, and inference speed. The results demonstrate the strengths and limitations of each approach, providing insights into their suitability for various underwater fish detection applications. This study contributes to the advancement of automated marine monitoring systems, enabling more efficient and accurate assessment of fish populations and their behaviors in natural habitats.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
