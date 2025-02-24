@@ -1,0 +1,18 @@
+names:
+- fish
+- jellyfish
+- penguin
+- puffin
+- shark
+- starfish
+- stingray
+nc: 7
+roboflow:
+  license: CC BY 4.0
+  project: aquarium-combined
+  url: https://universe.roboflow.com/brad-dwyer/aquarium-combined/dataset/6
+  version: 6
+  workspace: brad-dwyer
+test: /mydrive/yolov9/test/images  # Ensure this path is correct
+train: /mydrive/yolov9/train/images  # Ensure this path is correct
+val: /mydrive/yolov9/valid/images  # Ensure this path is correct
