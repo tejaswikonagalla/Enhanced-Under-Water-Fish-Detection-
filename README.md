@@ -1,8 +1,10 @@
-**PROJECT DETAILS :**
+# Enhanced Underwater Fish Detection: A Comparative Study of YOLOv9 and Faster RCNN
+
+## OVERVIEW :
 
 <div align="justify">This project focuses on developing an advanced system for underwater fish detection and species recognition using deep learning techniques. Identifying and classifying fish species in underwater environments presents significant challenges due to poor visibility, varying lighting conditions and the presence of particulate matter. To overcome these issues, this project uses efficient neural network architectures and image processing techniques to enhance detection accuracy and performance.The primary objective of this project is to enable real-time and accurate detection of fish species(Fish, jellyfish, penguin, puffin, shark, starfish and sting ray) in underwater environments. The system utilizes convolutional neural networks (CNNs) to extract meaningful features from images and classify different fish species. By leveraging optimized deep learning models and adaptive image enhancement techniques, the project aims to improve the reliability of underwater fish detection, supporting marine research, environmental monitoring, and sustainable fisheries management.To evaluate the effectiveness of different deep learning models, we trained and compared the performance of two distinct architectures: Faster R-CNN with MobileNet and YOLOv9 in the backend. The results of both models were analyzed and we came to a conclusion that Faster RCNN is the best model to be used for underwater fish detection.</div><br/>
 
-**FEATURES :**
+## FEATURES :
 
 <div align="justify">
 
@@ -18,14 +20,14 @@
 
 <b>6)Scalability and Flexibility :</b> The lightweight nature of the proposed system, powered by MobileNet, offers scalability and flexibility, allowing it to be deployed on a variety of platforms, including underwater vehicles and embedded systems. </div><br/>
 
-**DATASET DETAILS :**
+## DATASET DETAILS :
 
 <div align="justify">The dataset is from Roboflow and the dataset used is <b>“Aquarium Combined”</b>.The dataset utilized for this project comprises a diverse collection of underwater images, specifically curated to represent seven distinct marine species: Fish, jellyfish, penguin, puffin, shark, starfish and sting ray.It helps to make the model more versatile during training, thus providing for correct identification of these water creatures in their natural environments.The dataset comprises of 638 images which are further splitted into 448 (70%) train, 127(20%) valid, 63(10%) test images.</div><br/>
 The dataset can be accessed by using the link : https://universe.roboflow.com/brad-dwyer/aquarium-combined/dataset/6 <br/><br/>
 
 <br/>
 
-**ALGORITHMS AND TECHNOLOGIES :**
+## ALGORITHMS AND TECHNOLOGIES :
 
 <div align="justify">
   
@@ -41,19 +43,19 @@ The dataset can be accessed by using the link : https://universe.roboflow.com/br
 
 <b>6)HTML, CSS, and JavaScript :</b> Used to develop a web-based platform where users can upload fish images, register, and sign in to interact with the detection system.</div><br/>
 
-**PREREQUISITES :**
+## PREREQUISITES :
 
 The installations must be done in <b>Windows PowerShell</b> using the following commands:
 
-1) choco install xampp-72
+```
+choco install xampp-72
+```
 
-2) choco install miniconda3
+```
+choco install vscode
+```
 
-3) choco install vscode
-
-<br/>
-
-**STEPS FOR PROJECT EXECUTION :**
+## STEPS FOR PROJECT EXECUTION :
 
 1)Download all the files.
 
@@ -67,7 +69,10 @@ The installations must be done in <b>Windows PowerShell</b> using the following 
 
 6)The codes will be opened in Visual Studio Code.
 
-7)Now in Visual Studio Code open a new terminal and run the command "python app.py".
+7)Now in Visual Studio Code open a new terminal and run the command given below
+```
+  python app.py
+```
 
 8)Now a http link will be generated and opening that link will lead us to UI of the project.
 
@@ -77,7 +82,7 @@ The installations must be done in <b>Windows PowerShell</b> using the following 
 
 <br/>
 
-**PROJECT WORKFLOW :**
+## PROJECT WORKFLOW :
 
 <div align="justify">
 
